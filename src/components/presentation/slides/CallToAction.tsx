@@ -6,10 +6,8 @@ import Icon from "@/components/ui/icon";
 const CallToAction: React.FC = () => {
   return (
     <div className="w-full h-full flex flex-col items-center justify-center">
-
-        <div className="text-center space-y-8">
-          {/* Удаляем дублирующий заголовок, он уже есть в slidesData */}
-
+      <div className="text-center space-y-8">
+        <Button 
           size="lg" 
           className="bg-red-600 hover:bg-red-700 transition-all text-white text-xl px-12 py-6"
           onClick={() => window.location.href = "https://lol.secure.dyn.riotcdn.net/channels/public/x/installer/current/live.ru.zip"}
