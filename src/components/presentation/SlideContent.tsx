@@ -21,7 +21,7 @@ const SlideContent: React.FC<SlideContentProps> = ({
 
   return (
     <div className={cn(
-      "flex-1 flex flex-col items-center justify-center px-4 py-12", 
+      "flex-1 flex flex-col items-center justify-center px-4", 
       "transition-all duration-500"
     )}>
       <div className="max-w-3xl w-full h-full flex flex-col items-center justify-center">
@@ -29,7 +29,7 @@ const SlideContent: React.FC<SlideContentProps> = ({
           <p className="text-red-400/70 text-base mb-2">{slide.subtitle}</p>
         )}
         
-        <div className="text-white min-h-[300px] w-full flex flex-col items-center justify-center">
+        <div className="text-white w-full flex flex-col items-center justify-center">
           {contentWithProps}
         </div>
       </div>

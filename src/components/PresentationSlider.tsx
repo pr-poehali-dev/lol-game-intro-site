@@ -41,14 +41,14 @@ const PresentationSlider = () => {
     <div 
       className={`min-h-screen flex flex-col ${slidesData[currentSlide].background} transition-colors duration-700`}
     >
-      <div className="flex-1 flex flex-col">
-        <Header 
-          currentSlide={currentSlide} 
-          totalSlides={slidesData.length} 
-          onSlideChange={handleSlideChange} 
-        />
-        
-        <div className={`transition-opacity duration-300 ${isTransitioning ? 'opacity-0' : 'opacity-100'}`}>
+      <Header 
+        currentSlide={currentSlide} 
+        totalSlides={slidesData.length} 
+        onSlideChange={handleSlideChange} 
+      />
+      
+      <div className="flex-1 flex items-center justify-center">
+        <div className={`w-full transition-opacity duration-300 ${isTransitioning ? 'opacity-0' : 'opacity-100'}`}>
           <SlideContent 
             slide={slidesData[currentSlide]} 
             currentIndex={currentSlide} 
