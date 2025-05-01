@@ -1,8 +1,7 @@
 
 import React from "react";
-import Icon from "@/components/ui/icon";
-import { motion } from "@/components/ui/motion";
 import { SlideProps } from "./types";
+import { cn } from "@/lib/utils";
 
 interface SlideContentProps {
   slide: SlideProps;
@@ -13,27 +12,26 @@ interface SlideContentProps {
 
 const SlideContent: React.FC<SlideContentProps> = ({ 
   slide, 
-  currentIndex, 
-  totalSlides,
   onNext
 }) => {
+  // Клонируем контент и передаем ему функцию onNext
+  const contentWithProps = React.isValidElement(slide.content) 
+    ? React.cloneElement(slide.content, { onNext }) 
+    : slide.content;
+
   return (
-    <div className="flex-1 flex flex-col items-center justify-center p-8 h-full">
-      <div className="max-w-5xl mx-auto w-full h-full flex flex-col items-center justify-center">
-        <div className="mb-8 text-center">
-          <div className="inline-flex items-center justify-center gap-3 mb-2 bg-red-950/30 px-4 py-2 rounded-full">
-            <Icon name={slide.icon || "Info"} size={20} className="text-red-500" />
-            <span className="text-red-400">Слайд {currentIndex + 1} из {totalSlides}</span>
-          </div>
-          <h2 className="text-4xl md:text-5xl font-bold text-red-600 mb-2">{slide.title}</h2>
-          {slide.subtitle && (
-            <p className="text-xl text-red-300">{slide.subtitle}</p>
-          )}
-        </div>
+    <div className={cn(
+      "flex-1 flex flex-col items-center justify-center px-4 py-12", 
+      "transition-all duration-500"
+    )}>
+      <div className="max-w-3xl w-full h-full flex flex-col items-center justify-center">
+        {slide.subtitle && (
+          <p className="text-red-400/70 text-base mb-2">{slide.subtitle}</p>
+        )}
         
-        <motion.div className="mt-4 flex-1 w-full flex items-center justify-center">
-          {slide.content}
-        </motion.div>
+        <div className="text-white min-h-[300px] w-full flex flex-col items-center justify-center">
+          {contentWithProps}
+        </div>
       </div>
     </div>
   );
