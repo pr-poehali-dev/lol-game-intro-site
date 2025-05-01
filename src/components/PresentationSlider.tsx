@@ -5,10 +5,12 @@ import SlideContent from "./presentation/SlideContent";
 import SlideControls from "./presentation/SlideControls";
 import Header from "./presentation/Header";
 import { slidesData } from "./presentation/slidesData";
+import { useIsMobile } from "@/hooks/use-mobile";
 
 const PresentationSlider = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isTransitioning, setIsTransitioning] = useState(false);
+  const isMobile = useIsMobile();
 
   const handleSlideChange = (index: number) => {
     if (index < 0) {
@@ -39,7 +41,7 @@ const PresentationSlider = () => {
 
   return (
     <div 
-      className={`min-h-screen flex flex-col ${slidesData[currentSlide].background} transition-colors duration-700`}
+      className={`min-h-screen flex flex-col ${slidesData[currentSlide].background} transition-colors duration-700 overflow-hidden`}
     >
       <Header 
         currentSlide={currentSlide} 
@@ -47,7 +49,7 @@ const PresentationSlider = () => {
         onSlideChange={handleSlideChange} 
       />
       
-      <div className="flex-1 flex items-center justify-center">
+      <div className="flex-1 flex items-center justify-center p-2 md:p-4">
         <div className={`w-full transition-opacity duration-300 ${isTransitioning ? 'opacity-0' : 'opacity-100'}`}>
           <SlideContent 
             slide={slidesData[currentSlide]} 
