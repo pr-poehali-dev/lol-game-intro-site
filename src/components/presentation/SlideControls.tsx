@@ -21,7 +21,7 @@ const SlideControls: React.FC<SlideControlsProps> = ({
       <Button 
         variant="outline" 
         onClick={onPrevious}
-        className="border-red-900 text-red-400 hover:bg-red-950/30 flex items-center gap-2"
+        className="border-red-900 text-red-400 hover:text-red-300 hover:bg-red-950/40 hover:border-red-800 flex items-center gap-2"
       >
         <Icon name="ArrowLeft" size={18} />
         Назад
@@ -34,7 +34,7 @@ const SlideControls: React.FC<SlideControlsProps> = ({
       <Button 
         variant="outline" 
         onClick={onNext}
-        className="border-red-900 text-red-400 hover:bg-red-950/30 flex items-center gap-2"
+        className="border-red-900 text-red-400 hover:text-red-300 hover:bg-red-950/40 hover:border-red-800 flex items-center gap-2"
       >
         Далее
         <Icon name="ArrowRight" size={18} />
