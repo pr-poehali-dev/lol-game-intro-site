@@ -36,7 +36,7 @@ export default {
           DEFAULT: "#1a56db", // Темно-синий акцентный цвет
           foreground: "hsl(var(--accent-foreground))",
         },
-
+        popover: {
           DEFAULT: "hsl(var(--popover))",
           foreground: "hsl(var(--popover-foreground))",
         },
