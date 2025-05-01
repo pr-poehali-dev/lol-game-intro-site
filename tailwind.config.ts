@@ -15,12 +15,13 @@ export default {
         ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
+
         primary: {
-          DEFAULT: "#121212",
+          DEFAULT: "#0a192f",
           foreground: "hsl(var(--primary-foreground))",
         },
         secondary: {
-          DEFAULT: "#0F0F0F",
+          DEFAULT: "#071527",
           foreground: "hsl(var(--secondary-foreground))",
         },
         destructive: {
@@ -32,10 +33,10 @@ export default {
           foreground: "hsl(var(--muted-foreground))",
         },
         accent: {
-          DEFAULT: "#c41e3a", // Яркий красный цвет
+          DEFAULT: "#1a56db", // Темно-синий акцентный цвет
           foreground: "hsl(var(--accent-foreground))",
         },
-        popover: {
+
           DEFAULT: "hsl(var(--popover))",
           foreground: "hsl(var(--popover-foreground))",
         },
