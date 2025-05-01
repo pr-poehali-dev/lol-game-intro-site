@@ -66,14 +66,13 @@ const PresentationSlider = () => {
               <p>Каждый чемпион имеет уникальные способности и стиль игры, позволяя найти персонажа под любой стиль.</p>
             </div>
           </Card>
-          
           <Card className="bg-black/40 border-red-900 backdrop-blur-sm p-6 transform transition-all hover:scale-105">
             <div className="flex flex-col items-center text-center">
               <div className="w-16 h-16 rounded-full bg-red-900/40 flex items-center justify-center mb-4">
-                <Icon name="Globe" size={32} className="text-red-500" />
+                <Icon name="Smile" size={32} className="text-red-500" />
               </div>
-              <h3 className="text-lg font-bold mb-2 text-red-400">Глобальное сообщество</h3>
-              <p>Миллионы игроков, профессиональные турниры с огромными призовыми фондами и киберспортивная сцена.</p>
+              <h3 className="text-lg font-bold mb-2 text-red-400">Растворение заёба</h3>
+              <p>Игры идут просто, быстро и весело, позволяя отвлечься от повседневных проблем и получить массу удовольствия.</p>
             </div>
           </Card>
         </div>
