@@ -17,11 +17,12 @@ const PresentationSlider = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isTransitioning, setIsTransitioning] = useState(false);
 
+
   const slides: SlideProps[] = [
     {
       title: "Погрузись в мир League of Legends",
       subtitle: "От шутера к стратегии",
-
+      content: (
         <div className="flex flex-col items-center">
           <img 
             src="https://cdn.poehali.dev/files/97f40d06-851e-4ce0-943f-a2b11b570415.png" 
@@ -39,12 +40,11 @@ const PresentationSlider = () => {
             </Button>
           </div>
         </div>
-
       ),
       background: "bg-gradient-to-b from-black to-red-950",
       icon: "GameController"
     },
-    {
+
       title: "Что такое League of Legends?",
       content: (
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-4">
