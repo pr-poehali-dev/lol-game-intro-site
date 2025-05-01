@@ -21,11 +21,11 @@ const PresentationSlider = () => {
     {
       title: "Погрузись в мир League of Legends",
       subtitle: "От шутера к стратегии",
-      content: (
+
         <div className="flex flex-col items-center">
           <img 
-            src="https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=2070" 
-            alt="League of Legends" 
+            src="https://cdn.poehali.dev/files/97f40d06-851e-4ce0-943f-a2b11b570415.png" 
+            alt="League of Legends vs Fortnite" 
             className="rounded-lg mb-8 max-w-md shadow-lg shadow-red-900/30" 
           />
           <p className="text-xl max-w-xl text-center">
@@ -39,6 +39,7 @@ const PresentationSlider = () => {
             </Button>
           </div>
         </div>
+
       ),
       background: "bg-gradient-to-b from-black to-red-950",
       icon: "GameController"
