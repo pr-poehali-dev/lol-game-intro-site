@@ -5,9 +5,9 @@ import Icon from "@/components/ui/icon";
 
 const CallToActionSlide: React.FC = () => {
   return (
-    <div className="w-full h-full flex flex-col items-center justify-center">
-      <div className="flex flex-col items-center justify-center gap-6">
-        <h3 className="text-2xl font-semibold text-red-300 mb-4">
+    <div className="grid place-items-center h-full w-full">
+      <div className="text-center">
+        <h3 className="text-2xl font-semibold text-red-300 mb-8">
           Присоединяйся к миллионам игроков!
         </h3>
         <Button 
