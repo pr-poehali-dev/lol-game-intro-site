@@ -1,7 +1,5 @@
 
 import React from "react";
-import { Button } from "@/components/ui/button";
-import { Card } from "@/components/ui/card";
 import Icon from "@/components/ui/icon";
 import { motion } from "@/components/ui/motion";
 import { SlideProps } from "./types";
@@ -19,7 +17,7 @@ const SlideContent: React.FC<SlideContentProps> = ({
   totalSlides,
   onNext
 }) => {
-
+  return (
     <div className="flex-1 flex flex-col items-center justify-center p-8 h-full">
       <div className="max-w-5xl mx-auto w-full h-full flex flex-col items-center justify-center">
         <div className="mb-8 text-center">
@@ -38,7 +36,6 @@ const SlideContent: React.FC<SlideContentProps> = ({
         </motion.div>
       </div>
     </div>
-
   );
 };
 

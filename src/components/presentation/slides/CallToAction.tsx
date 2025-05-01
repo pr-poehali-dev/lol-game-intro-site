@@ -1,25 +1,22 @@
 
 import React from "react";
 import { Button } from "@/components/ui/button";
-import Icon from "@/components/ui/icon";
 
-const CallToActionSlide: React.FC = () => {
+const CallToAction: React.FC = () => {
   return (
-    <div className="w-full flex flex-col items-center justify-center">
-      <div className="text-center">
-        <h3 className="text-2xl font-semibold text-red-300 mb-8">
-          Присоединяйся к миллионам игроков!
-        </h3>
+    <div className="w-full h-full flex flex-col items-center justify-center">
+      <div className="text-center space-y-8">
+        <h3 className="text-3xl font-bold text-red-300">Готовы начать игру?</h3>
         <Button 
-          className="bg-red-600 hover:bg-red-700 text-white font-bold px-8 py-6 text-xl rounded-md flex items-center gap-2 shadow-lg transform transition-transform hover:scale-105"
-          onClick={() => window.open('https://lol.secure.dyn.riotcdn.net/channels/public/x/installer/current/live.ru.zip', '_blank')}
+          size="lg" 
+          className="animate-pulse bg-red-600 hover:bg-red-700 hover:scale-105 transition-all text-white text-xl px-12 py-6"
+          onClick={() => window.open("https://www.leagueoflegends.com/", "_blank")}
         >
-          <Icon name="Download" size={24} />
-          Скачать бесплатно
+          Начать играть сейчас
         </Button>
       </div>
     </div>
   );
 };
 
-export default CallToActionSlide;
+export default CallToAction;
