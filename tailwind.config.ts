@@ -17,15 +17,15 @@ export default {
         foreground: "hsl(var(--foreground))",
 
         primary: {
-          DEFAULT: "#0a192f",
+          DEFAULT: "hsl(217, 76%, 56%)",
           foreground: "hsl(var(--primary-foreground))",
         },
         secondary: {
-          DEFAULT: "#071527",
+          DEFAULT: "hsl(217, 76%, 15%)",
           foreground: "hsl(var(--secondary-foreground))",
         },
         destructive: {
-          DEFAULT: "hsl(var(--destructive))",
+          DEFAULT: "hsl(217, 76%, 42%)",
           foreground: "hsl(var(--destructive-foreground))",
         },
         muted: {
@@ -33,7 +33,7 @@ export default {
           foreground: "hsl(var(--muted-foreground))",
         },
         accent: {
-          DEFAULT: "#1a56db", // Темно-синий акцентный цвет
+          DEFAULT: "#2563eb", // Яркий синий акцентный цвет
           foreground: "hsl(var(--accent-foreground))",
         },
         popover: {
@@ -44,7 +44,7 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-      },
+
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
