@@ -34,10 +34,12 @@ export const slidesData: SlideProps[] = [
     background: "bg-gradient-to-br from-black via-red-950/40 to-black",
     icon: "ArrowRightLeft"
   },
+
   {
     title: "Готов стать Призывателем?",
     content: <CallToActionSlide />,
-    background: "bg-gradient-to-b from-black to-red-950",
+    background: "bg-gradient-to-b from-blue-950 to-blue-900",
     icon: "Download"
   }
+
 ];
