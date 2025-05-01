@@ -14,12 +14,14 @@ interface SlideContentProps {
 }
 
 const SlideContent: React.FC<SlideContentProps> = ({ 
+
+const SlideContent: React.FC<SlideContentProps> = ({ 
   slide, 
   currentIndex, 
   totalSlides,
   onNext
 }) => {
-  return (
+
     <div className="flex-1 flex flex-col items-center justify-center p-8">
       <div className="max-w-5xl mx-auto">
         <div className="mb-8 text-center">
