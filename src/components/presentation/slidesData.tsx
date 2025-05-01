@@ -35,11 +35,13 @@ export const slidesData: SlideProps[] = [
     icon: "ArrowRightLeft"
   },
 
+
   {
-    title: "Готов стать Призывателем?",
+    title: "Готов расстворить заёб с Русами?",
     content: <CallToActionSlide />,
     background: "bg-gradient-to-br from-black via-red-950/40 to-black",
     icon: "Download"
   }
+
 
 ];
