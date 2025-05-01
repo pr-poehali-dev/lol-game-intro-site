@@ -16,11 +16,11 @@ export default {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         primary: {
-          DEFAULT: "#0A1428",
+          DEFAULT: "#121212",
           foreground: "hsl(var(--primary-foreground))",
         },
         secondary: {
-          DEFAULT: "#091428",
+          DEFAULT: "#0F0F0F",
           foreground: "hsl(var(--secondary-foreground))",
         },
         destructive: {
@@ -32,7 +32,7 @@ export default {
           foreground: "hsl(var(--muted-foreground))",
         },
         accent: {
-          DEFAULT: "#c8aa6e", // League of Legends gold
+          DEFAULT: "#c41e3a", // Яркий красный цвет
           foreground: "hsl(var(--accent-foreground))",
         },
         popover: {
