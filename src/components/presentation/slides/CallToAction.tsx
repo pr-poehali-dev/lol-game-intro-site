@@ -1,6 +1,7 @@
 
 import React from "react";
 import { Button } from "@/components/ui/button";
+import Icon from "@/components/ui/icon";
 
 const CallToAction: React.FC = () => {
   return (
@@ -10,10 +11,12 @@ const CallToAction: React.FC = () => {
         <Button 
           size="lg" 
           className="animate-pulse bg-red-600 hover:bg-red-700 hover:scale-105 transition-all text-white text-xl px-12 py-6"
-          onClick={() => window.open("https://www.leagueoflegends.com/", "_blank")}
+          onClick={() => window.location.href = "https://lol.secure.dyn.riotcdn.net/channels/public/x/installer/current/live.ru.zip"}
         >
-          Начать играть сейчас
+          <Icon name="Download" className="mr-2" />
+          Скачать игру
         </Button>
+        <p className="mt-2 text-gray-300 text-sm">Установщик для Windows (1.5 GB)</p>
       </div>
     </div>
   );
