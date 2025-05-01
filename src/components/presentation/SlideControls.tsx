@@ -17,29 +17,39 @@ const SlideControls: React.FC<SlideControlsProps> = ({
   onNext
 }) => {
   return (
-    <div className="py-6 px-8 flex justify-between items-center border-t border-red-900/30">
+    <div className="flex justify-between items-center p-4 border-t border-red-900/20">
       <Button 
-        variant="outline" 
+        variant="outline"
         onClick={onPrevious}
-        className="border-red-900 text-red-400 hover:text-red-300 hover:bg-red-950/40 hover:border-red-800 flex items-center gap-2"
-        style={{ borderColor: '#7f1d1d', color: '#f87171' }}
+        className="border-red-800/30 text-red-400 hover:bg-red-950/30 hover:text-red-300 hover:border-red-700"
+        style={{
+          backgroundColor: "transparent",
+          borderColor: "rgba(153, 27, 27, 0.3)",
+          color: "rgb(248, 113, 113)",
+          boxShadow: "none"
+        }}
       >
-        <Icon name="ArrowLeft" size={18} />
+        <Icon name="ArrowLeft" className="mr-2" size={18} />
         Назад
       </Button>
       
-      <div className="text-red-400">
-        <span className="text-red-600 font-bold">{currentSlide + 1}</span> из {totalSlides}
+      <div className="text-red-400/70 text-sm">
+        {currentSlide + 1} / {totalSlides}
       </div>
       
       <Button 
-        variant="outline" 
+        variant="outline"
         onClick={onNext}
-        className="border-red-900 text-red-400 hover:text-red-300 hover:bg-red-950/40 hover:border-red-800 flex items-center gap-2"
-        style={{ borderColor: '#7f1d1d', color: '#f87171' }}
+        className="border-red-800/30 text-red-400 hover:bg-red-950/30 hover:text-red-300 hover:border-red-700"
+        style={{
+          backgroundColor: "transparent",
+          borderColor: "rgba(153, 27, 27, 0.3)",
+          color: "rgb(248, 113, 113)",
+          boxShadow: "none"
+        }}
       >
         Далее
-        <Icon name="ArrowRight" size={18} />
+        <Icon name="ArrowRight" className="ml-2" size={18} />
       </Button>
     </div>
   );
