@@ -33,7 +33,7 @@ export default {
           foreground: "hsl(var(--muted-foreground))",
         },
         accent: {
-          DEFAULT: "#2563eb", // Яркий синий акцентный цвет
+          DEFAULT: "hsl(217, 76%, 50%)",
           foreground: "hsl(var(--accent-foreground))",
         },
         popover: {
@@ -44,7 +44,7 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-
+      },
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
