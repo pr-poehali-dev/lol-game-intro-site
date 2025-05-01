@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Button } from "@/components/ui/button";
 import Icon from "@/components/ui/icon";
@@ -6,6 +5,9 @@ import Icon from "@/components/ui/icon";
 const CallToAction: React.FC = () => {
   return (
     <div className="w-full h-full flex flex-col items-center justify-center">
+      <h2 className="text-3xl md:text-4xl font-bold text-white mb-8 text-center">
+        Готов расстворить заеб с Русами?
+      </h2>
       <div className="text-center space-y-8">
         <Button 
           size="lg" 
