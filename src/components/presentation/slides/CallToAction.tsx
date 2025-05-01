@@ -5,7 +5,7 @@ import Icon from "@/components/ui/icon";
 
 const CallToActionSlide: React.FC = () => {
   return (
-    <div className="grid place-items-center h-full w-full">
+    <div className="w-full flex flex-col items-center justify-center">
       <div className="text-center">
         <h3 className="text-2xl font-semibold text-red-300 mb-8">
           Присоединяйся к миллионам игроков!
