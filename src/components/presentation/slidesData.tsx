@@ -35,12 +35,12 @@ export const slidesData: SlideProps[] = [
     icon: "ArrowRightLeft"
   },
 
-
+  // Slide 5
   {
+    id: "cta",
     title: "Готов расстворить заёб с Русами?",
-    content: <CallToActionSlide />,
-    background: "bg-gradient-to-br from-black via-red-950/40 to-black",
-    icon: "Download"
+    component: CallToAction,
+  },
   }
 
 
