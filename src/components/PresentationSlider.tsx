@@ -43,8 +43,9 @@ const PresentationSlider = () => {
       ),
       background: "bg-gradient-to-b from-black to-red-950",
       icon: "GameController"
-    },
 
+    },
+    {
       title: "Что такое League of Legends?",
       content: (
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-4">
@@ -81,7 +82,7 @@ const PresentationSlider = () => {
       background: "bg-gradient-to-br from-black via-red-950/50 to-black",
       icon: "Info"
     },
-    {
+
       title: "Основные механики",
       content: (
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-4">
