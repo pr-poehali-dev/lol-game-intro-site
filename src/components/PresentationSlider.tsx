@@ -80,9 +80,9 @@ const PresentationSlider = () => {
         </div>
       ),
       background: "bg-gradient-to-br from-black via-red-950/50 to-black",
-      icon: "Info"
-    },
 
+    },
+    {
       title: "Основные механики",
       content: (
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-4">
@@ -170,6 +170,7 @@ const PresentationSlider = () => {
       background: "bg-gradient-to-tl from-black via-red-950/30 to-black",
       icon: "Cog"
     },
+
     {
       title: "Fortnite vs League of Legends",
       content: (
